@@ -44,18 +44,26 @@ const MonthlyView = (props) => {
         <button className="nav-btn" onClick={prevMonth}>
           Prev
         </button>
-        <h2 className="month-year">
-          {months[monthIdx]} {year} <button onClick={today}>today</button>
+        <div className="month-year">
+          <h2>
+            {months[monthIdx]} {year}
+          </h2>
+          <button onClick={today}>today</button>
           <button onClick={props.changeView}>Weekly view</button>
-        </h2>
+        </div>
+
         <button className="nav-btn" onClick={nextMonth}>
           Next
         </button>
       </div>
       <div className="monthly-calendar">
         <div className="weekdays-header">
-          {weekDays.map((weekday,idx) => {
-            return <div key={idx} className="weekday">{weekday}</div>;
+          {weekDays.map((weekday, idx) => {
+            return (
+              <div key={idx} className="weekday">
+                {weekday}
+              </div>
+            );
           })}
         </div>
         <div className="monthly-grid">
