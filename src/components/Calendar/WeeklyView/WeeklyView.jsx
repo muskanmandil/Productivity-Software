@@ -41,13 +41,45 @@ const WeeklyView = (props) => {
           Next
         </button>
       </div>
-      <div className="calendar">
+      <div className="weekly-calendar">
+        <div className="empty-box"></div>
         <div className="weekdays-header">
-          {weekDays.map((weekday) => {
-            return <div className="weekday">{weekday}</div>;
+          {weekDays.map((weekday, idx) => {
+            return (
+              <div key={idx} className="weekday">
+                {weekday}
+              </div>
+            );
           })}
         </div>
+        <div className="time-stamps-container">
+          <div className="time-stamp">00:00</div>
+          <div className="time-stamp">01:00</div>
+          <div className="time-stamp">02:00</div>
+          <div className="time-stamp">03:00</div>
+          <div className="time-stamp">04:00</div>
+          <div className="time-stamp">05:00</div>
+          <div className="time-stamp">06:00</div>
+          <div className="time-stamp">07:00</div>
+          <div className="time-stamp">08:00</div>
+          <div className="time-stamp">09:00</div>
+          <div className="time-stamp">10:00</div>
+          <div className="time-stamp">11:00</div>
+          <div className="time-stamp">12:00</div>
+          <div className="time-stamp">13:00</div>
+          <div className="time-stamp">14:00</div>
+          <div className="time-stamp">15:00</div>
+          <div className="time-stamp">16:00</div>
+          <div className="time-stamp">17:00</div>
+          <div className="time-stamp">18:00</div>
+          <div className="time-stamp">19:00</div>
+          <div className="time-stamp">20:00</div>
+          <div className="time-stamp">21:00</div>
+          <div className="time-stamp">22:00</div>
+          <div className="time-stamp">23:00</div>
+        </div>
         <div className="weekly-grid">
+          {/* <div className="current-time-line"></div> */}
           {calendarMatrix.map((day, idx) => {
             return (
               <div

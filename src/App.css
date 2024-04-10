@@ -1,9 +1,13 @@
 .app {
-    display: flex;
-    height: 100vh;
+  display: flex;
+  /* height: 100vh; */
 }
 
 .main-screen {
-    display: flex;
-    width: 90vw;
+  display: flex;
+  width: 90vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
 }

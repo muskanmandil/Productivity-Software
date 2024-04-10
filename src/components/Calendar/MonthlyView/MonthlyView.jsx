@@ -52,10 +52,10 @@ const MonthlyView = (props) => {
           Next
         </button>
       </div>
-      <div className="calendar">
+      <div className="monthly-calendar">
         <div className="weekdays-header">
-          {weekDays.map((weekday) => {
-            return <div className="weekday">{weekday}</div>;
+          {weekDays.map((weekday,idx) => {
+            return <div key={idx} className="weekday">{weekday}</div>;
           })}
         </div>
         <div className="monthly-grid">

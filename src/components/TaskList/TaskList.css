@@ -1,4 +1,9 @@
 .list-container {
     width: 20vw;
     border-right: 1px solid black;
+    overflow-y: scroll;
+}
+
+.task {
+    height: 500px;
 }

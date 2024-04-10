@@ -1,4 +1,8 @@
-.sidebar{
-    width: 10vw;
-    border-right: 1px solid black;
+.sidebar {
+  width: 10vw;
+  border-right: 1px solid black;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
