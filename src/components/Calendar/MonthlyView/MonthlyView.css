@@ -1,0 +1,56 @@
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-btn{
+    height: fit-content;
+}
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.weekdays-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.weekday {
+    text-align: center;
+}
+
+.monthly-grid {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(6,1fr);
+    flex-grow: 1;
+}
+
+.calendar-day{
+    text-align: end;
+    padding: 0.25rem;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.today {
+    background-color: aqua;
+}
+
+.this-month {
+    background-color: beige;
+}
+
+.other-month {
+    background-color: gray;
+}
