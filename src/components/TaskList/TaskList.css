@@ -1,34 +1,38 @@
 .list-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 20vw;
-    border-right: 1px solid black;
-    overflow-y: scroll;
-    padding: 3vh 1.5vw;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 20vw;
+  border-right: 1px solid black;
+  overflow-y: scroll;
+  padding: 3vh 1.5vw;
+  box-sizing: border-box;
 }
 
-.list-header{
-    display: flex;
-    flex-direction: column;
-    gap:0.5rem;
+.list-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.task-input-div{
-    display: flex;
+.task-input-div {
+  display: flex;
 }
 
-.task-list{
-    display: flex;
-    flex-direction: column;
-    /* gap: 2rem; */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  /* gap: 2rem; */
 }
 
 .task {
-    display: flex;
-    align-items: center;
-    padding: 1rem 0;
-    gap: 0.5rem;
-    border: 1px solid black;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 0.5rem;
+  border: 1px solid black;
+}
+
+.completed-task {
+  text-decoration: line-through;
 }

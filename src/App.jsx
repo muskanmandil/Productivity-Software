@@ -1,18 +1,20 @@
 import "./App.css";
+import LoginPage from "./pages/LoginPage";
+import MainScreen from "./pages/MainScreen";
 import Sidebar from "./components/Sidebar/Sidebar";
-import TaskList from "./components/TaskList/TaskList";
-import Calendar from "./components/Calendar/Calendar";
+import { useState } from "react";
 
 const App = () => {
-  return (
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  return (!isLoggedIn ? (
+    <LoginPage setLogin={()=>{setIsLoggedIn(true)}}/>
+  ) : (
     <div className="app">
       <Sidebar />
-      <div className="main-screen">
-        <TaskList />
-        <Calendar />
-      </div>
+      <MainScreen />
     </div>
-  );
+  ));
 };
 
 export default App;
